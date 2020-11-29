@@ -2,18 +2,16 @@
 @import 'abstracts/mixins';
 @import 'abstracts/variables';
 
+@import 'base/modern-css-reset';
 @import 'base/base';
 @import 'base/typography';
 @import 'base/utilities';
 
 @import 'components/button';
-@import 'components/modal';
 
 @import 'layout/footer';
 @import 'layout/hero';
 @import 'layout/about';
 @import 'layout/contact';
 @import 'layout/feature';
-@import 'layout/works';
 @import 'layout/header';
-@import 'layout/thanks';

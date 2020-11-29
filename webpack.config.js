@@ -48,7 +48,6 @@ module.exports = {
           },
           {
             loader: 'css-loader',
-            options: { sourceMap: true },
           },
           {
             loader: 'postcss-loader',
@@ -94,10 +93,6 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/templates/index.html',
       filename: 'index.html',
-    }),
-    new HtmlWebpackPlugin({
-      template: './src/templates/thanks.html',
-      filename: 'thanks.html',
     }),
 
     new CleanWebpackPlugin(),

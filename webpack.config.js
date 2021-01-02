@@ -14,7 +14,7 @@ module.exports = {
   },
 
   devServer: {
-    contentBase: path.join(__dirname, 'dist/html'),
+    contentBase: path.join(__dirname, 'dist'),
     // publicPath: '/dist/',
     open: true,
     // hot: true,
@@ -53,7 +53,7 @@ module.exports = {
             loader: 'postcss-loader',
             options: {
               postcssOptions: {
-                plugins: [['autoprefixer', { grid: false }]],
+                plugins: [['autoprefixer', { grid: true }]],
               },
             },
           },
@@ -83,6 +83,10 @@ module.exports = {
             },
           },
         ],
+      },
+      {
+        test: /\.html$/i,
+        loader: 'html-loader',
       },
     ],
   },
